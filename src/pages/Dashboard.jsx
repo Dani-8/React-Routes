@@ -6,7 +6,7 @@ export default function Dashboard() {
       <h1 className="text-2xl font-bold">Dashboard</h1>
       <p>This page uses <b>Outlet</b> to render nested routes below.</p>
 
-      <div className="mt-4 p-4 border rounded-2xl bg-white">
+      <div className="mt-4 p-4 border border-pink-700 rounded-2xl bg-white">
         <Outlet />
       </div>
     </div>
