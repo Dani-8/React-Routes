@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Dashboard from './pages/Dashboard'
+import ProfilesOverview from './pages/ProfilesOverview'
 import Profile from './pages/Profile'
 import NotFound from './pages/NotFound'
 
@@ -17,6 +18,8 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
 
         <Route path="/dashboard" element= {<Dashboard />}>
+          <Route index element={<ProfilesOverview />} />
+
           <Route path="profile/:id" element={<Profile />} />
         </Route>
 
