@@ -4,9 +4,15 @@ export default function Home() {
       <h1 className="text-4xl font-black text-slate-900 mb-4 tracking-tight">
         Welcome <span className="text-orange-500">Home</span>
       </h1>
-      <p className="text-slate-600 text-lg leading-relaxed">
-        This is your main dashboard entry point. Everything starts here.
-      </p>
+      
+      {/* Dev Notes Section */}
+      <div className="mt-8 p-4 bg-slate-800 rounded-xl border border-orange-100">
+        <h3 className="font-bold text-orange-400 text-sm mb-2 uppercase tracking-widest">Dev Notes: Routing</h3>
+        <p className="text-slate-300 text-sm">
+          This is a <b>Static Route</b>. In <code>App.jsx</code>, it uses <code>index</code> or <code>path="/"</code>. 
+          When the URL matches exactly, this component is mounted into the <code>Outlet</code>.
+        </p>
+      </div>
     </div>
   )
 }
