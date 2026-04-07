@@ -2,12 +2,16 @@ import { Outlet } from 'react-router-dom'
 
 export default function Dashboard() {
   return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold">Dashboard</h1>
-      <p>This page uses <b>Outlet</b> to render nested routes below.</p>
+    <div className="p-4">
+      <div className="flex items-center gap-3 mb-6">
+        <div className="w-2 h-8 bg-orange-500 rounded-full"></div>
+        <h1 className="text-3xl font-black text-slate-900">Dashboard</h1>
+      </div>
 
-      <div className="mt-4 p-4 border border-pink-700 rounded-2xl bg-white">
-        <Outlet />
+      <div className="p-2 bg-slate-100/50 rounded-[2rem]">
+        <div className="bg-white p-6 rounded-[1.8rem] border border-slate-200 shadow-sm">
+          <Outlet />
+        </div>
       </div>
     </div>
   )

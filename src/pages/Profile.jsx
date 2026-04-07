@@ -1,27 +1,32 @@
-import { useParams } from 'react-router-dom'
-
-const users = {
-  1: { name: 'Alice', age: 25, role: 'Admin' },
-  2: { name: 'Bob', age: 30, role: 'Editor' },
-  3: { name: 'Charlie', age: 22, role: 'Viewer' },
-}
+import { useLoaderData, useNavigate } from 'react-router-dom';
 
 export default function Profile() {
-  const { id } = useParams()
-  const user = users[id]
-
-  if (!user) return <p className="p-4 text-red-500">User not found</p>
+  const user = useLoaderData();
+  const navigate = useNavigate();
 
   return (
-    <div className="p-6">
-      <h2 className="text-xl font-bold">Profile Page</h2>
-      <p>This uses <b>useParams</b> to get dynamic URL data.</p>
-
-      <div className="mt-4 p-4 border rounded-2xl bg-white">
-        <p><b>Name:</b> {user.name}</p>
-        <p><b>Age:</b> {user.age}</p>
-        <p><b>Role:</b> {user.role}</p>
+    <div className="max-w-md mx-auto bg-white p-8 rounded-3xl border border-slate-200 shadow-2xl relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-2 bg-orange-500"></div>
+      <button onClick={() => navigate(-1)} className="mb-6 text-sm font-semibold text-orange-600 hover:underline">
+        ← Back to list
+      </button>
+      <h2 className="text-2xl font-black text-slate-900 mb-4">{user.name}'s Profile</h2>
+      <div className="space-y-3">
+        <p className="flex justify-between border-b pb-2"><span className="text-slate-500">Age</span> <b>{user.age}</b></p>
+        <p className="flex justify-between border-b pb-2"><span className="text-slate-500">Position</span> <b>{user.role}</b></p>
       </div>
     </div>
-  )
+  );
 }
+
+export const profileLoader = async ({ params }) => {
+  const users = {
+    '1': { name: 'Alice', age: 25, role: 'Admin' },
+    '2': { name: 'Bob', age: 30, role: 'Editor' },
+    '3': { name: 'Charlie', age: 22, role: 'Viewer' },
+  };
+  
+  const user = users[params.id];
+  if (!user) throw new Response("Not Found", { status: 404 });
+  return user;
+};
