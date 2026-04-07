@@ -16,7 +16,7 @@ export default function Contact() {
       </button>
 
       <div className="text-left p-4 bg-slate-800 rounded-xl border border-orange-100 mt-5">
-        <h3 className="font-bold text-orange-400 text-sm mb-2 uppercase tracking-widest">Dev Notes: useNavigate</h3>
+        <h3 className="font-bold text-orange-400 text-sm mb-2 uppercase tracking-widest">Notes: useNavigate</h3>
         <p className="text-slate-300 text-sm leading-relaxed">
           The <code>useNavigate</code> hook gives you a function to change the URL via code (like after a form submission or a button click) rather than just clicking a <code>Link</code>.
         </p>

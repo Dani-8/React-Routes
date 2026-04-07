@@ -7,7 +7,7 @@ export default function Home() {
       
       {/* Dev Notes Section */}
       <div className="mt-8 p-4 bg-slate-800 rounded-xl border border-orange-100">
-        <h3 className="font-bold text-orange-400 text-sm mb-2 uppercase tracking-widest">Dev Notes: Routing</h3>
+        <h3 className="font-bold text-orange-400 text-sm mb-2 uppercase tracking-widest">Notes: Routing</h3>
         <p className="text-slate-300 text-sm">
           This is a <b>Static Route</b>. In <code>App.jsx</code>, it uses <code>index</code> or <code>path="/"</code>. 
           When the URL matches exactly, this component is mounted into the <code>Outlet</code>.
