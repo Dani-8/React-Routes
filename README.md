@@ -1,6 +1,3 @@
-Here is a professional, high-fidelity `README.md` for your project. It’s organized to show off both the **UI features** and the **technical logic** you've implemented.
-
-
 # 🚀 Routing | React Data Router Demo
 
 A modern, high-fidelity React application demonstrating the power of **React Router 6.4+ Data APIs**. This project moves away from traditional `useEffect` data fetching in favor of **Loaders** for a faster, flicker-free user experience.
