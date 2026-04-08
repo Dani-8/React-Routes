@@ -62,4 +62,4 @@ src/
 ---
 
 ## 📝 Dev Notes Summary
-Every page in this project includes a **"Knowledge Overlay"** (Dev Notes). These sections explain exactly which React Router hook or concept is being used in that specific component, making it a perfect learning template.
+Every page in this project includes a **"Knowledge Overlay"** (Notes). These sections explain exactly which React Router hook or concept is being used in that specific component, making it a perfect learning template.
