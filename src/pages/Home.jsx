@@ -7,7 +7,7 @@ export default function Home() {
       <p className="text-slate-600 mb-8">This app is a demo of how modern React Routing works.</p>
       
 
-      {/* App.jsx Explanation Section */}
+      {/* App.jsx Explanation */}
       <div className="space-y-4">
         <div className="p-5 bg-slate-900 rounded-2xl border-l-6 border-orange-500 shadow-xl">
           <h3 className="font-bold text-orange-400 text-xs uppercase tracking-widest mb-3">

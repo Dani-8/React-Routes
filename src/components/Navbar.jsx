@@ -7,6 +7,7 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 backdrop-blur-md bg-white/70 border-b border-orange-100 py-4 px-8 flex justify-between items-center">
       <h1 className="font-black text-xl tracking-tight text-orange-600">Routing</h1>
+      
       <div className="flex gap-2 font-medium">
         <NavLink to="/" className={linkStyle}>Home</NavLink>
         <NavLink to="/about" className={linkStyle}>About</NavLink>

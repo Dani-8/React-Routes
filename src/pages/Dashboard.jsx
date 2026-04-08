@@ -13,6 +13,7 @@ export default function Dashboard() {
           <Outlet />
         </div>
       </div>
+      
 
       <div className="p-4 bg-slate-800 rounded-xl text-white mt-5">
         <h3 className="font-bold text-orange-400 text-sm mb-2 uppercase tracking-widest">Notes: Outlet</h3>

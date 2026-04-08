@@ -10,7 +10,9 @@ export default function Profile() {
       <button onClick={() => navigate(-1)} className="mb-6 text-sm font-semibold text-orange-600 hover:underline">
         ← Back to list
       </button>
+
       <h2 className="text-2xl font-black text-slate-900 mb-4">{user.name}'s Profile</h2>
+      
       <div className="space-y-3">
         <p className="flex justify-between border-b pb-2"><span className="text-slate-500">Age</span> <b>{user.age}</b></p>
         <p className="flex justify-between border-b pb-2"><span className="text-slate-500">Position</span> <b>{user.role}</b></p>
