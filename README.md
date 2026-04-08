@@ -4,14 +4,6 @@ A modern, high-fidelity React application demonstrating the power of **React Rou
 
 ---
 
-## ✨ UI Features
-* **Glassmorphism Design:** Sticky, blurred navbar with orange/amber accents.
-* **Modern Layouts:** Uses Tailwind CSS for `rounded-3xl` containers and soft shadows.
-* **tactile Interactions:** Active-state scaling on buttons and hover-state depth on cards.
-* **Responsive Grid:** Profiles overview adapts from mobile to desktop flawlessly.
-
----
-
 ## 🧠 Technical Concepts Used
 
 ### 1. Data Routing (`createBrowserRouter`)
@@ -71,4 +63,3 @@ src/
 
 ## 📝 Dev Notes Summary
 Every page in this project includes a **"Knowledge Overlay"** (Dev Notes). These sections explain exactly which React Router hook or concept is being used in that specific component, making it a perfect learning template.
-```
